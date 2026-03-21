@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Grape Nuts", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin:0 auto
+}
+
+.flex{
+    display: flex;
+}
+
+.gui-contato button{
+    padding: 5px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(122, 18, 18);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gui-contato img{
+    max-width: auto;
+    max-height: auto;
+    width: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+button:hover, form .enviar input:hover{
+    box-shadow: 0px 0px 8px rgb(122, 18, 18);
+    transform: scale(1.10)
+
+}
+
+/*FORMATAR CABELHACO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   display: inline-block;
+   transition: .2s;
+   font-size: 20px;
+}
+header nav ul li :hover{
+    color:red;
+    transform: scale(1.10);
+}
+
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+    border-radius: 30px;
+    justify-content: space-between;
+
+}
+
+.gui-contato button:hover{
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    transform: scale(1.10);
+}
+
+.logo a{
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo a:hover{
+    color:red;
+    transform: scale(1.50);
+}
+/* PAGINA PRINCIPAL */
+
+section.topo-site{
+    padding: 100px 4%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px
+}
+
+.topo-site h1{
+    color: rgb(255, 255, 255);
+    font-size: 52px;
+    font-family: "Carter One";
+    text-align: center;
+    letter-spacing: 8px;
+    word-break: break-word;
+}
+
+
+.topo-site .txt-topo-site h1 span{
+    color: rgb(122, 18, 18);
+    font-family: "Carter One";  
+}
+
+.topo-site .txt-topo-site p{
+    color: rgb(255, 255, 255);
+    margin: 40px 10px;
+    font-family: "Grape Nuts", cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-top: -5px;
+}
+
+.icones a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid rgb(122, 18, 18);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: rgb(122, 18, 18);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.icones a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: rgb(122, 18, 18);
+    box-shadow: 0  0 25px rgb(122, 18, 18);
+}
+
+/* PAGINA SOBRE */
+
+.img-sobre-mim img {
+  width: 500px;
+  max-width: 150%;
+  border-radius: 30%;
+}
+
+section.site-sobre{
+    padding: 0px 5%;
+}
+
+section.site-sobre .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.site-sobre .txt-sobre-mim h1{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "Carter One"; 
+}
+
+.site-sobre .txt-sobre-mim p span{
+    color: rgb(122, 18, 18);
+    font-size: 25px;
+    font-family: "Carter One";
+}
+
+.site-sobre .txt-sobre-mim p{
+    color: white;
+    margin: 20px 0;
+    font-family: "Carter One";
+    white-space: nowrap;
+}
+
+.site-sobre .img-sobre-mim img{
+    position: relative;
+    animation: flutuando 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuando{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 30px
+    }
+}
+
+/*PAGINA CONTATOS FORMULARIO*/
+section.formulario{
+    padding: 1px 4%;
+}
+
+section.formulario h1{
+    color: rgb(255, 255, 255);
+    font-size: 52px;
+    font-family: "Carter One";
+    text-align: center;
+    letter-spacing: 8px;
+
+}
+
+section.formulario p.telefone{
+    text-align: center;
+    color: white;
+    font-family: "Carter One", cursive;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+
+section.formulario div.icones{
+    text-align: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+form input, form textarea{
+    width: 500px;
+    background-color: rgb(31, 31, 31);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Carter One";
+}
+
+form input::placeholder{
+    color: rgb(122, 18, 18);
+}
+
+form textarea{
+    resize: none;
+    max-height: 100px;
+}
+
+form .enviar{
+    margin-top: 5px;
+    text-align: center;
+}
+
+form .enviar input{
+    width: 200px;
+    background-color: rgb(122, 18, 18);
+    color: black;
+    font-family: 'Grape Nuts';
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/*PROJETOS*/
+
+section.txt-projetos{
+    padding: 80px 4%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section.txt-projetos .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+section.txt-projetos h1{
+    color: rgb(122, 18, 18);
+    font-size: 50px;
+    line-height: 40px;
+    font-family: "Carter One"; 
+    margin: 20px 0;
+}
+
+section.txt-projetos h1 span{
+    color: white;
+}
+
+
+section.txt-projetos p{
+    color: white;
+    margin: 20px 0;
+    font-family: "Carter One";
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+section.txt-projetos span.HTML{
+    color: rgb(255, 94, 0);
+}
+
+section.txt-projetos span.CSS{
+    color: rgb(0, 162, 255);
+}
+
+/* PAGINA NOVIDADES */
+
+section.novidades{
+    padding: 80px 4%;
+    margin: 0 auto;
+    
+}
+
+section.novidades h1{
+    color: rgb(122, 18, 18);
+    font-size: 52px;
+    font-family: "Carter One";
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+section.novidades h2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Carter One";
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+section.novidades p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Carter One";
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.item{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.item span{
+    color: rgb(122, 18, 18);
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.item p{
+    margin: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+section.novidades p span{
+    width: 30px;
+    height: 30px;
+    color: rgb(122, 18, 18);
+    margin-top: 8px;
+    flex-shrink: 0;
+    }
