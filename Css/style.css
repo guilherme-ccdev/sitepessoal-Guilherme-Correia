@@ -33,6 +33,7 @@ body{
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
+    outline: none;
 }
 
 .gui-contato img{
@@ -449,7 +450,7 @@ section.novidades p span{
     .gui-curriculo {
         display: flex;
         justify-content: center;
-        margin: 10px 0;
+        margin: 100px 0;
     }
 
     .gui-contato button,
@@ -463,6 +464,8 @@ section.novidades p span{
     form textarea {
         width: 100%;
     }
+
+
 
     /* NOVIDADES */
     .item {
@@ -479,5 +482,10 @@ section.novidades p span{
     section.txt-projetos p {
         white-space: normal;
         font-size: 16px;
+    }
+
+    .icones {
+        width: 100%;
+        max-width: 250px;
     }
 }
