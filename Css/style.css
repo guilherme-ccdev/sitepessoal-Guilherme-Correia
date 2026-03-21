@@ -321,7 +321,6 @@ section.txt-projetos p{
     color: white;
     margin: 20px 0;
     font-family: "Carter One";
-    white-space: nowrap;
     font-size: 20px;
 }
 
@@ -399,3 +398,86 @@ section.novidades p span{
     margin-top: 8px;
     flex-shrink: 0;
     }
+
+
+
+/* FORMATACAO CELULAR */ 
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    header .interface {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* TOPO */
+    .topo-site h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .topo-site .txt-topo-site p {
+        font-size: 25px;
+    }
+
+    /* SOBRE */
+    section.site-sobre .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-sobre-mim img {
+        width: 250px;
+    }
+
+    .site-sobre .txt-sobre-mim p {
+        white-space: normal; /* MUITO IMPORTANTE */
+    }
+
+    /* BOTÕES */
+    .gui-contato,
+    .gui-curriculo {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .gui-contato button,
+    .gui-curriculo button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* FORMULÁRIO */
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    /* NOVIDADES */
+    .item {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    .item p {
+        font-size: 14px;
+    }
+
+    /* PROJETOS */
+    section.txt-projetos p {
+        white-space: normal;
+        font-size: 16px;
+    }
+}
